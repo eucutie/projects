@@ -1,15 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Link Directory</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/more</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #1a0f2e;
+        }
+        .card {
+            background: #26193d;
+            border: 1px solid #44355a;
+        }
+        .card:hover {
+            border-color: #7c3aed;
+        }
+    </style>
 </head>
-<body>
-  <h1>More projects!</h1>
-  
-  <h2>Vercel apps</h2>
-  <ul>
-    <li><a href="https://10secondsgame.vercel.app" target="_blank">10secondsgame</a></li>
-  </ul>
+<body class="min-h-screen p-6 font-mono">
+
+    <div class="max-w-md mx-auto">
+        
+        <header class="mb-6 text-center">
+            <h1 class="text-3xl text-white mb-2">/more</h1>
+            <p class="text-purple-300/60 text-sm">more projects</p>
+        </header>
+
+        <main class="space-y-2">
+
+<!-- LINK 1 -->
+<a href="https://10secondsgame.vercel.app" target="_blank" 
+   class="card block p-3 rounded-lg hover:bg-[#352552] transition">
+    <div class="flex items-center justify-between">
+        <div>
+            <div class="text-white font-bold">10secondsgame</div>
+            <div class="text-gray-400 text-xs">nice web clicker game!</div>
+        </div>
+        <span class="text-gray-500 text-sm">↗</span>
+    </div>
+</a>
+
+        </main>
+
+        <footer class="text-center mt-6 text-gray-600 text-xs">
+            /more
+        </footer>
+
+    </div>
 
 </body>
 </html>
